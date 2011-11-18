@@ -15,7 +15,7 @@ module Sooner
         verify_haml_version
         create_and_copy_haml_views
       else
-      directory "layout/sooner", "app/views/layout/#{scope || 'sooner'}"
+      directory "layouts/sooner", "app/views/layouts/#{scope || 'sooner'}"
       directory "sooner", "app/views/#{scope || 'sooner'}"
       end
     end
