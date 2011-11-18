@@ -7,11 +7,11 @@ require "sooner/version"
 Gem::Specification.new do |s|
   s.name        = "sooner"
   s.version     = Sooner::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Sooner."
-  s.description = "TODO: Description of Sooner."
+  s.authors     = ["Shenouda Bertel"]
+  s.email       = ["sbertel@mobithought.com"]
+  s.homepage    = "http://mobithought.com"
+  s.summary     = "Comming soon page for your upcoming application"
+  s.description = "Comming soon page for your upcoming application."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
