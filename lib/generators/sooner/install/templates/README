@@ -1,0 +1,13 @@
+
+===============================================================================
+
+Some setup you must do manually if you haven't yet:
+  1. Add mount to routes for Sooner to to *something* in your config/routes.rb.
+  		mount Sooner::Engine => "/"
+
+  2. Ensure you have flash messages in app/views/layouts/application.html.erb.
+     For example:
+
+       <p class="notice"><%= notice %></p>
+
+===============================================================================

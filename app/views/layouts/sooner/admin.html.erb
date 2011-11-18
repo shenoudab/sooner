@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sooner</title>
+		<%= stylesheet_link_tag    "sooner/admin/subscribers" %>
+		<%= javascript_include_tag "sooner/admin/subscribers" %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<%= yield %>
+			</div>
+			<footer>
+				<p>
+					© mobiThought 2011
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

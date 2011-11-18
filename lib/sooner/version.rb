@@ -1,0 +1,3 @@
+module Sooner
+  VERSION = "0.0.1"
+end

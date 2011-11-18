@@ -1,0 +1,9 @@
+<div id="subscriber">
+	<div class="notice">
+		<%= notice %>
+	</div>
+	<%= form_for @subscriber, :remote => true do |f| %>
+	<%= f.text_field :email, :placeholder => "Enter your e-mail" %>
+	<%= f.submit "Subscribe" %>
+	<% end %>
+</div>
