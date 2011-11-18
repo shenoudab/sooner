@@ -7,11 +7,11 @@ module Sooner
   mattr_accessor :admin_password
   @@admin_password = 'admin'
 
-  mattr_accessor :send_mail
-  @@send_mail = false
+  mattr_accessor :send_email
+  @@send_email = false
 
-  mattr_accessor :sooner_mail
-  @@sooner_mail = 'info@sooner.com'
+  mattr_accessor :sender_email
+  @@sooner_email = 'info@sooner.com'
 
   mattr_accessor :name_required
   @@name_required = false
@@ -24,9 +24,6 @@ module Sooner
 
   mattr_accessor :csv_file
   @@csv_file = 'subscribers.csv'
-
-  mattr_accessor :mailer_sender
-  @@mailer_sender = nil
 
   # Messages
   mattr_accessor :subscribed

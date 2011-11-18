@@ -24,7 +24,7 @@ module Sooner
         if Sooner.mongo_store
         @subscriber.save
         end
-        if Sooner.send_mail
+        if Sooner.send_email
         SubscribersMailer.subscribed(@subscriber).deliver
         end
       respond_with @subscriber, :location => root_url

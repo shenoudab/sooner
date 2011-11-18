@@ -1,7 +1,7 @@
 module Sooner
   class SubscribersMailer < ActionMailer::Base
-    default from: Sooner.sooner_mail
-  
+    default from: Sooner.sender_email
+    
     # Subject can be set in your I18n file at config/locales/en.yml
     # with the following lookup:
     #
