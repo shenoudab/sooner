@@ -9,8 +9,8 @@ gemspec
 gem "jquery-rails"
 
 # MongoID
-gem 'mongoid'
-gem 'bson_ext'
+gem "mongoid", "~> 2.3"
+gem "bson_ext", "~> 1.4"
 
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or

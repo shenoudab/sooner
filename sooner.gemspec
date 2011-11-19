@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 3.1.2"
   # s.add_dependency "jquery-rails"
 
-  s.add_development_dependency "mongoid"
-  s.add_development_dependency "bson_ext"
+  s.add_development_dependency "mongoid", "~> 2.3"
+  s.add_development_dependency "bson_ext", "~> 1.4"
 end
