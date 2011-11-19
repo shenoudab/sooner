@@ -11,17 +11,7 @@
 	</ul>
 </div>
 <% end %>
-<div class="field">
-	<%= f.label :name %>
-	<br />
-	<%= f.text_field :name %>
-</div>
-<div class="field">
-	<%= f.label :email %>
-	<br />
-	<%= f.text_field :email %>
-</div>
-<div class="actions">
-	<%= f.submit %>
-</div>
-<% end %> 
+<%= f.text_field :name, :placeholder => "Enter subscriber Name" %>
+<%= f.text_field :email, :placeholder => "Enter subscriber Email" %>
+<%= f.submit "Add Subscriber" %>
+<% end %>
