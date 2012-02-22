@@ -1,0 +1,36 @@
+<div class="page-header">
+	<h1>Add new Subscriber</h1>
+</div>
+<div id="subscriber">
+	<%= form_for(@subscriber) do |f| %>
+	<% if @subscriber.errors.any? %>
+	<div id="error_explanation">
+		<h2><%= pluralize(@subscriber.errors.count, "error") %> prohibited this subscriber from being saved:</h2>
+		<ul>
+			<% @subscriber.errors.full_messages.each do |msg| %>
+			<li>
+				<%= msg %>
+			</li>
+			<% end %>
+		</ul>
+	</div>
+	<% end %>
+	<div class="clearfix">
+		<%= f.label :name %>
+		<div class="input">
+			<%= f.text_field :name, :class => 'xlarge', :placeholder => "Enter subscriber Name" %>
+		</div>
+	</div>
+	<div class="clearfix">
+		<%= f.label :email %>
+		<div class="input">
+			<%= f.text_field :email, :class => 'xlarge', :placeholder => "Enter subscriber Email" %>
+		</div>
+	</div>
+	<div class="actions">
+		<%= f.submit "Add Subscriber", :class => 'btn primary' %>&nbsp;
+		<%= link_to 'Cancel', admin_subscribers_path, :class => 'btn' %>
+	</div>
+	<% end %>
+</div>
+<%= link_to 'Back', admin_subscribers_path %> 

@@ -1,0 +1,5 @@
+<% if @subscriber.errors[:name].include?("is already taken") || @subscriber.errors[:email].include?("is already taken")%>
+$('#subscriber').html("<%= Sooner.already_subscribed %>");
+<% else %>
+$('#subscriber').html("<%= Sooner.subscribed %>");
+<% end %>
