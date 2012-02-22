@@ -19,4 +19,5 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", ">= 3.2.1"
   s.add_dependency "mongoid"
   s.add_dependency "bson_ext"
+  s.add_dependency "anjlab-bootstrap-rails", ">= 2.0"
 end
