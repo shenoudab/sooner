@@ -1,11 +1,12 @@
 <div class="page-header">
 	<h1>Subscribers List <small> Your App upcoming users</small></h1>
 </div>
-<table class="zebra-striped" id="subscribers_list">
+<table class="table table-striped table-bordered table-condensed" id="subscribers_list">
 	<tr>
 		<th>#</th>
 		<th>Name</th>
 		<th>Email</th>
+		<th> @ </th>
 		<th> * </th>
 	</tr>
 	<% @subscribers.each_with_index do |subscriber, index| %>
@@ -13,6 +14,7 @@
 		<td><%= index + 1 %></td>
 		<td><%= subscriber.name %></td>
 		<td><%= subscriber.email %></td>
+		<td><%= subscriber.created_at %></td>
 		<td><%= link_to 'Show', admin_subscriber_path(subscriber) %> |
 		<%= link_to 'Edit', edit_admin_subscriber_path(subscriber) %> |
 		<%= link_to 'Delete', admin_subscriber_path(subscriber), confirm: 'Are you sure?', method: :delete %></td>
@@ -20,4 +22,4 @@
 	<% end %>
 </table>
 <br />
-<%= link_to 'New Subscriber', new_admin_subscriber_path %> 
+<%= link_to 'New Subscriber', new_admin_subscriber_path, :class => 'btn' %>

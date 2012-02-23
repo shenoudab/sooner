@@ -1,6 +1,7 @@
 module Sooner
   class Subscriber
     include Mongoid::Document
+    include Mongoid::Timestamps
 
     field :name, :type => String, default: ""
     field :email, :type => String

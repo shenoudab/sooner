@@ -1,8 +1,8 @@
 <div class="page-header">
-	<h1>Add new Subscriber</h1>
+	<h1>New Subscriber</h1>
 </div>
 <div id="subscriber">
-	<%= form_for(@subscriber) do |f| %>
+	<%= form_for @subscriber, :html => { :class => "form-horizontal" } do |f| %>
 	<% if @subscriber.errors.any? %>
 	<div id="error_explanation">
 		<h2><%= pluralize(@subscriber.errors.count, "error") %> prohibited this subscriber from being saved:</h2>
@@ -15,22 +15,26 @@
 		</ul>
 	</div>
 	<% end %>
-	<div class="clearfix">
-		<%= f.label :name %>
-		<div class="input">
-			<%= f.text_field :name, :class => 'xlarge', :placeholder => "Enter subscriber Name" %>
+	<fieldset>
+		<legend>
+			Subscriber Inputs
+		</legend>
+		<div class="control-group">
+			<%= f.label :name, :class => "control-label" %>
+			<div class="controls">
+				<%= f.text_field :name, :class => 'input-xlarge', :placeholder => "Enter subscriber Name" %>
+			</div>
 		</div>
-	</div>
-	<div class="clearfix">
-		<%= f.label :email %>
-		<div class="input">
-			<%= f.text_field :email, :class => 'xlarge', :placeholder => "Enter subscriber Email" %>
+		<div class="control-group">
+			<%= f.label :email, :class => "control-label" %>
+			<div class="controls">
+				<%= f.text_field :email, :class => 'input-xlarge', :placeholder => "Enter subscriber Email" %>
+			</div>
 		</div>
-	</div>
-	<div class="actions">
-		<%= f.submit "Add Subscriber", :class => 'btn primary' %>&nbsp;
-		<%= link_to 'Cancel', admin_subscribers_path, :class => 'btn' %>
-	</div>
+		<div class="form-actions">
+			<%= f.submit "Add Subscriber", :class => 'btn' %>&nbsp;
+			<%= link_to 'Cancel', admin_subscribers_path, :class => 'btn' %>
+		</div>
+	</fieldset>
 	<% end %>
 </div>
-<%= link_to 'Back', admin_subscribers_path %> 
