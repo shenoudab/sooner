@@ -14,10 +14,10 @@
 		<td><%= index + 1 %></td>
 		<td><%= subscriber.name %></td>
 		<td><%= subscriber.email %></td>
-		<td><%= subscriber.created_at %></td>
-		<td><%= link_to 'Show', admin_subscriber_path(subscriber) %> |
-		<%= link_to 'Edit', edit_admin_subscriber_path(subscriber) %> |
-		<%= link_to 'Delete', admin_subscriber_path(subscriber), confirm: 'Are you sure?', method: :delete %></td>
+		<td><%= subscriber.created_at.strftime("%d %b %Y %M:%H") %></td>
+		<td><%= link_to 'Show', admin_subscriber_path(subscriber), :class => 'btn' %>
+		<%= link_to 'Edit', edit_admin_subscriber_path(subscriber), :class => 'btn' %>
+		<%= link_to 'Delete', admin_subscriber_path(subscriber), confirm: 'Are you sure?', method: :delete, :class => 'btn' %></td>
 	</tr>
 	<% end %>
 </table>

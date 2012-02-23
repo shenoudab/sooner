@@ -22,13 +22,13 @@
 		<div class="control-group">
 			<%= f.label :name, :class => "control-label" %>
 			<div class="controls">
-				<%= f.text_field :name, :class => 'input-xlarge', :placeholder => "Enter subscriber Name" %>
+				<%= f.text_field :name, :class => 'input-xlarge', :placeholder => "Subscriber Name" %>
 			</div>
 		</div>
 		<div class="control-group">
 			<%= f.label :email, :class => "control-label" %>
 			<div class="controls">
-				<%= f.text_field :email, :class => 'input-xlarge', :placeholder => "Enter subscriber Email" %>
+				<%= f.text_field :email, :class => 'input-xlarge', :placeholder => "Subscriber Email" %>
 			</div>
 		</div>
 		<div class="form-actions">
@@ -38,5 +38,6 @@
 	</fieldset>
 	<% end %>
 </div>
-<%= link_to 'Show', @subscriber %> |
-<%= link_to 'Back', admin_subscribers_path %> 
+
+<%= link_to 'Show', @subscriber, :class => "btn"%>
+<%= link_to 'Back', admin_subscribers_path => :class => "btn" %> 
