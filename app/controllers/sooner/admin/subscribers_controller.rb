@@ -79,7 +79,7 @@ module Sooner
       @subscriber.destroy
 
       respond_to do |format|
-        format.html { redirect_to admin_url }
+        format.html { redirect_to admin_root_url }
         format.json { head :ok }
       end
     end
