@@ -5,9 +5,12 @@ source "http://rubygems.org"
 # development dependencies will be added by default to the :development group.
 gemspec
 
+group :assets do
+  gem 'twitter-bootstrap-rails'
+end
+
 # jquery-rails is used by the dummy application
 gem "jquery-rails"
-gem 'anjlab-bootstrap-rails', '>= 2.0', :require => 'bootstrap-rails'
 
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or

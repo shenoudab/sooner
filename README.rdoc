@@ -1,3 +1,5 @@
 = Sooner
 
-This project rocks and uses MIT-LICENSE.
+ Your Upcoming Application Coming Soon Page.
+ 
+ This project rocks and uses MIT-LICENSE.
