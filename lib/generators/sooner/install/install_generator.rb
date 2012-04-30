@@ -4,7 +4,7 @@ module Sooner
     def self.source_root
       @_sooner_source_root ||= File.expand_path("../templates", __FILE__)
     end
-    
+
     def copy_initializer
       template "sooner.rb", "config/initializers/sooner.rb"
     end
