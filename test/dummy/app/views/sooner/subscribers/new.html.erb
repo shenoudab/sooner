@@ -2,8 +2,28 @@
 	<div class="notice">
 		<%= notice %>
 	</div>
-	<%= form_for @subscriber, :remote => true do |f| %>
-	<%= f.text_field :email, :placeholder => "Enter your e-mail" %>
-	<%= f.submit "Subscribe" %>
+	<%= form_for @subscriber, :remote => true, :html => { :class => 'form-horizontal' } do |f| %>
+	<fieldset>
+		<div class="control-group">
+			<div class="controls">
+				<h2>Subscribe to Our App</h2>
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="controls">
+				<%= f.text_field :name, :placeholder => "Enter your name", :class => "input-xlarge" %>
+			</div>
+		</div>
+		<div class="control-group">
+			<div class="controls">
+				<%= f.text_field :email, :placeholder => "Enter your e-mail", :class => "input-xlarge" %>
+			</div>
+		</div>
+	</fieldset>
+
+	<div class="form-actions">
+		<%= f.submit "Subscribe", :class => 'btn' %>
+	</div>
+
 	<% end %>
 </div>

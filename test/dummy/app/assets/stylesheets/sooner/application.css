@@ -1,0 +1,16 @@
+/*
+ *= require bootstrap
+ *= require_self
+*/
+html, body {
+	background-color: #eee;
+}
+body {
+	padding-top: 40px;
+}
+.hero-unit {
+	background-color: white;
+	padding: 0px;
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
