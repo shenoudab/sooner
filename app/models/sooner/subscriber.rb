@@ -3,8 +3,8 @@ module Sooner
     include Mongoid::Document
     include Mongoid::Timestamps
 
-    field :name, :type => String, default: ""
-    field :email, :type => String
+    field :name
+    field :email
 
     validates :email, :presence => true, :uniqueness => true
     validates :name, :presence => true, :if => :name_required
